@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn share
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--google fonts(montserrat)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="container nav__container">
+      <a href="index.html"><h3>LEARN SHARE</h3></a>
+      <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">login</a></li>
+      </ul>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+       
+      
+    </div>
+</nav>
+ <!--home-->
+ <selection class="home">
+  <div class="form_container">
+    <i class="uil uil-time form.close"></i>
+   <!--Login-->
+     <div class="login">
+        <form onsubmit="validate" action="./index.html">
+            <h2>sign-up</h2>
+            <input type="First name" placeholder="Enter First Name" class="box" required>
+            <input type="Last name" placeholder="Enter Last Name" class="box" required>
+           <input type="email/number" placeholder="Enter your email/number" class="box" id="email" required>
+           <i class="uil uil-envelope-alt email"></i>
+           <input type="password" placeholder="Enter password" class="box" id="password" required>
+           <input type="password" placeholder="Comfirm password" class="box" id="password2" required>
+           <i class="uil uil-lock password"></i>
+           
+                <button class="button" id="form_open"> Sign-up Now</button>
+
+                 <form class="login_signup">
+                   Already have an account?<a href="./login.html" id="login">login</a>
+                </form>
+         </form> 
+      </div>
+</div>
+</selection>
+
+<script src="C:\Users\lenov\OneDrive\Documents\learn share\signup.js"></script>
+  
+</body>
+</html>

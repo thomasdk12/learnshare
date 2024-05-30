@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn share
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/socialstudies9.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--google fonts(montserrat)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="container nav__container">
+      <a href="index.html"><h3><img class="image" src="./images/logo_transparent.png">LEARN SHARE</h3></a>
+      <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Quizes.html">Quiz</a></li>
+        <li><a href="subjects.html">subject</a></li>
+        <li><a href="Notes.html">Quick Notes</a></li>
+        <li><a href="questions and answers.html">Questions and answers</a></li>
+        <li><a href="login.html">login</a></li>
+      </ul>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+       
+      
+    </div>
+</nav>
+<div class="start-screen">
+  <button id="start-button">Start</button>
+</div>
+<div id="display-container">
+  <div class="header">
+    <div class="number-of-count">
+      <span class="number-of-question">1 of 3 questions</span>
+    </div>
+    <div class="timer-div">
+      <img src="timer-icon.svg" />
+      <span class="time-left">10s</span>
+    </div>
+  </div>
+  <div id="container">
+    <!-- questions and options will be displayed here -->
+  </div>
+  <button id="next-button">Next</button>
+</div>
+<div class="score-container hide">
+  <div id="user-score">Demo Score</div>
+  <button id="restart">Restart</button>
+</div>
+<script src="./biology.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

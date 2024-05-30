@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn share
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--google fonts(montserrat)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="container nav__container">
+      <a href="index.html"><h3><img class="image" src="./images/logo_transparent.png">LEARN SHARE</h3></a>
+      <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Quizes.html">Quiz</a></li>
+        <li><a href="subjects.html">subject</a></li>
+        <li><a href="To-Do-List.html">My To Do List</a></li>
+        <li><a href="Notes.html">Quick Notes</a></li>
+        <li><a href="Tips.html"> Study Tips</a></li>
+        <li><a href="signup.html">signup</a></li>
+        <li><a href="login.html">login</a></li>
+      </ul>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+       
+      
+    </div>
+</nav>
+<!--END OF NAV BAR-->
+<header>
+  <div class="container header__container">
+      <div class="header__left">
+        <h1>Grow and expand your <br>mind with e-learning</h1>
+        <p>Education is the passport to the future, <br>for tomorrow belongs to those who prepare for it today.” 
+          <br><a href="signup.html" class="btn btn-primary">Get started</a>
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </p>
+        <div class="quote-box">
+          <h2>Quote of the day</h2>
+          <blockquote id="quote">"Loading..."</blockquote>
+          <span id="author">Loading...</span>
+          <div>
+            <button onclick=" getquote(api_url)">New Quote</button>
+          </div>
+        </div>
+        <script>
+          const quote = document.getElementById("quote");
+          const author = document.getElementById("author");
+        const api_url = "https://api.quotable.io/random";
+        async function getquote(url){
+          const response = await fetch(url);
+          var data = await response.json();
+          quote.innerHTML = data.content;
+          author.innerHTML = data.author;
+        }
+
+        getquote(api_url);
+
+        </script>
+      </div>
+      <div class="header__right"></div>
+      <div class="header__right-image"></div>
+      </div>
+</header>
+<!--END OF HEADER-->
+<section class="categories">
+<div class="container categories__container">
+  <div class="categories__left">
+    <h1>Quizes</h1>
+    <p>
+      Technology is opening new horizons for education which is
+       changing the world of learning around us.
+        Educational expert Nadim Nsouli says, "I believe that learning through technology will continue to transform teaching practice. It can really help to tackle some of the challenges that are faced in the education sector such as efficiency, workload, accessibility, and inclusion."
+    </p>
+    <a href="Quizes.html" class="btn">Learn more</a>
+  </div>
+  <div class="categories__right">
+    <article class="categorys">
+      <span class="categorys__icon"><i class="uil uil-calculator-alt"></i></span>
+      <h5>Mathematics</h5>
+      <p>
+        Expand your mind by exposing yourself to
+         examinable math question from teachers and quizes
+      </p>
+    </article>
+
+    <article class="categorys">
+      <span class="categorys__icon"><i class="uil uil-dna"></i></span>
+      <h5>Biology</h5>
+      <p>
+        Explore the art of the human body with
+         examinable biology question from teachers and quizes
+      </p>
+    </article>
+
+    <article class="categorys">
+      <span class="categorys__icon"><i class="uil uil-atom"></i></span>
+      <h5>Chemisty</h5>
+      <p>
+        Expand your mind by exposing yourself to
+         examinable Chemisty question from teachers and quizes
+      </p>
+    </article>
+
+    <article class="categorys">
+      <span class="categorys__icon"><i class="uil uil-book-open"></i></span>
+      <h5>English</h5>
+      <p>
+        Improve your grammer and volcaburay with
+         examinable language question from teachers and quizes
+      </p>
+    </article>
+
+    <article class="categorys">
+      <span class="categorys__icon"><i class="uil uil-calculator-alt"></i></span>
+      <h5>Physics</h5>
+      <p>
+        Expand your mind by exposing yourself to
+         examinable Physics question from teachers and quizes
+      </p>
+    </article>
+
+    <article class="categorys">
+      <span class="categorys__icon"><i class="uil uil-robot"></i></span>
+      <h5>Technology</h5>
+      <p>
+        Expand your mind and tech skills with
+         examinable tech question from teachers and quizes
+      </p>
+    </article>
+  </div>
+</div>
+</section>
+<!--END OF CATEGORIES-->
+<section class="subjects">
+  <h2>Our popolar courses</h2>
+  <div class="container subjects__container">
+    <article class="subject">
+      <div class="subject_image">
+        <img src="./images/course-1.jpg" >
+      </div>
+      <div class="subject_info">
+      <h4>graphic design</h4>
+      <p>learn graphic design the easy wasy</p>
+      <a href="./subjects.html" class="btn btn-primary">learn more</a>
+    </div>
+    </article>
+
+
+    <article class="subject">
+      <div class="subject_image">
+        <img src="./images/course-3.jpg" >
+      </div>
+      <div class="subject_info">
+      <h4>Mathematics</h4>
+      <p>trgonometery</p>
+      <a href="./subjects.html" class="btn btn-primary">learn more</a>
+    </div>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <div class=" footer__container">
+    <div class="footer__1">
+      <a href="index.html" class="footer__logo"><h4>LEARN SHARE</h4></a>
+      <p>It is an e-learning platform that help you persure your Education standards with quality</p>
+    </div>
+
+    <div class="footer__2">
+     <h4>permalinks</h4>
+     <ul class="permalinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">dashboard</a></li>
+      <li><a href="subjects.html">subject</a></li>
+      <li><a href="videos.html">Community</a></li>
+     </ul>
+    </div>
+
+    <div class="footer__3">
+      <h4>permacy</h4>
+      <ul class="permacy">
+       <li><a href="#">privacy policy</a></li>
+       <li><a href="#">Terms and conditions</a></li>
+       <li><a href="#">Refund policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__4">
+        <h4>Contact Us</h4>
+        <p>+260 974 601 1145</p>
+        <p>dakathomas51@gmail.com</p>
+    </div>
+    <div class="footer__copyright">
+      <small>Copyright &copy; LEARN SHARE</small>
+    </div>
+
+  </div>
+</footer>
+<script src="./main.js"></script>
+</body>
+</html>

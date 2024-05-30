@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn share
+    </title>
+    <link rel="stylesheet" href="/css/to-do.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--google fonts(montserrat)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="container nav__container">
+      <a href="index.html"><h3><img class="image" src="./images/logo_transparent.png">LEARN SHARE</h3></a>
+      <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Quizes.html">Quiz</a></li>
+        <li><a href="subjects.html">subject</a></li>
+        <li><a href="To-Do-List.html">My To Do List</a></li>
+        <li><a href="Notes.html">Quick Notes</a></li>
+        <li><a href="Tips.html"> Study Tips</a></li>
+        <li><a href="signup.html">signup</a></li>
+        <li><a href="login.html">login</a></li>
+      </ul>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+       
+      
+    </div>
+  </nav>
+	<!-- App Wrapper -->
+	<main class="app">
+		<!-- Greeting -->
+		<section class="greeting">
+			<h2 class="title">
+				What's up, <input type="text" id="name" placeholder="Name here" />
+			</h2>
+		</section>
+		<!-- End of Greeting -->
+		
+		<!-- New Todo -->
+		<section class="create-todo">
+			<h3>CREATE A TODO</h3>
+			<form id="new-todo-form">
+				<h4>What's on your todo?</h4>
+				<input 
+					type="text" 
+					placeholder="e.g. Get some milk"
+					name="content"
+					id="content" />
+				
+				<h4>Pick a category</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+						<span class="bubble business"></span>
+						<div>School</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add todo" />
+			</form>
+		</section>
+	
+		<section class="todo-list">
+			<h3>TODO LIST</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+
+
+	</main>
+	
+
+	<script src="main.js"></script>
+</body>
+<script src="./to-do.js"></script>
+</html>
